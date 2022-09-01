@@ -17,6 +17,8 @@ jobs:
           onlyChanged: true
           traceChanged: true
           diagnostics: true
+          exitZeroOnChanges: true
+          exitOnceUploaded: true
           autoAcceptChanges: "main"
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
