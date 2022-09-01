@@ -1,0 +1,23 @@
+name: Chromatic
+on: push
+
+jobs:
+  chromatic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: install
+        run: yarn install --frozen-lockfile
+      - name: Run Chromatic
+        id: run-chromatic-action
+        uses: chromaui/action-next@v1
+        with:
+          onlyChanged: true
+          traceChanged: true
+          diagnostics: true
+          autoAcceptChanges: "main"
+        env:
+          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          STORYBOOK_GITHUB_SHA: ${{ github.event.pull_request.head.sha }}
