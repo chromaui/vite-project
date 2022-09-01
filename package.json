@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --only-changed --trace-changed 'expanded' --auto-accept-changes main"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -30,5 +31,7 @@
     "typescript": "^4.6.4",
     "vite": "^3.0.7",
     "vite-plugin-turbosnap": "^1.0.1"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "vite-project@0.0.0"
 }
