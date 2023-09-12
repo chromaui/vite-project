@@ -4,12 +4,13 @@ import { mergeConfig } from 'vite';
 import turbosnap from 'vite-plugin-turbosnap';
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  addons: [
-    '@storybook/addon-a11y',
-    '@storybook/addon-links',
-    '@storybook/addon-essentials',
-    '@storybook/addon-interactions',
-  ],
+  addons: ['@storybook/addon-a11y', '@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-interactions', {
+    name: '@chromaui/addon-visual-tests',
+    options: {
+      projectId: 'Project:63100550d8ec25de99eec202',
+      projectToken: 'b7e18a53b1f3'
+    }
+  }],
   framework: {
     name: '@storybook/react-vite',
     options: {},
