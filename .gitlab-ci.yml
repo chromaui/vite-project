@@ -1,5 +1,5 @@
 # Sets the docker image for the job
-image: node:latest
+image: node:16
 
 # Sets the stages for the pipeline
 stages:
