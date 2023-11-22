@@ -15,6 +15,9 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: run chromatic
         run: npx chromatic --only-changed --trace-changed 'expanded' --exit-zero-on-changes --diagnostics --exit-once-uploaded --auto-accept-changes 'main'
+        env:
+          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          STORYBOOK_GITHUB_SHA: ${{ github.event.pull_request.head.sha }}
       # - name: Run Chromatic
       #   id: run-chromatic-action
       #   uses: chromaui/action@v1
