@@ -7,6 +7,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+test-archives
+playwright-report
+
 node_modules
 dist
 dist-ssr
@@ -25,3 +28,5 @@ dist-ssr
 
 # Storybook
 storybook-static
+subdir
+subdir-static
