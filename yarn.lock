@@ -3756,6 +3756,11 @@ chownr@^2.0.0:
   resolved "https://registry.npmjs.org/chownr/-/chownr-2.0.0.tgz"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
+chromatic@9.0.1--canary.857.6894441504.0:
+  version "9.0.1--canary.857.6894441504.0"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-9.0.1--canary.857.6894441504.0.tgz#6d1e42f06a3dc3f4fa0e085513fd6371b7b68a12"
+  integrity sha512-nKFILWuRsAOFUSheTNOb1OXM0ZgsQHe4Mk8+T0Ia2l36/YVBlEGCl+6feL86BFJNQHkHtvdX2wCsZ54gSrPajA==
+
 chrome-trace-event@^1.0.2:
   version "1.0.3"
   resolved "https://registry.npmjs.org/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz"
