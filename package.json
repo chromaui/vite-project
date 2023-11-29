@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic@latest --only-changed --trace-changed 'expanded' --auto-accept-changes main --exit-zero-on-changes --exit-once-uploaded --project-token=b7e18a53b1f3"
+    "chromatic": "CHROMATIC_INDEX_URL=https://index.staging-chromatic.com npx chromatic --project-token=chpt_8adcafffd1b8cdc --only-changed --debug --trace-changed 'expanded' --exit-zero-on-changes --diagnostics --exit-once-uploaded --auto-accept-changes 'main'"
   },
   "dependencies": {
     "react": "^18.2.0",
