@@ -14,7 +14,7 @@ jobs:
       - name: install
         run: yarn install --frozen-lockfile
       - name: run chromatic
-        run: CHROMATIC_INDEX_URL=https://index.staging-chromatic.com npx chromatic --project-token=chpt_8adcafffd1b8cdc --only-changed --debug --trace-changed 'expanded' --exit-zero-on-changes --diagnostics --exit-once-uploaded --auto-accept-changes 'main'
+        run: CHROMATIC_INDEX_URL=https://index.staging-chromatic.com npx chromatic --project-token=chpt_8adcafffd1b8cdc --only-changed --debug --trace-changed 'expanded' --exit-zero-on-changes --upload-metadata --exit-once-uploaded --auto-accept-changes 'main'
         env:
           CHROMATIC_PROJECT_TOKEN: chpt_8adcafffd1b8cdc
           CHROMATIC_INDEX_URL: https://index.staging-chromatic.com
