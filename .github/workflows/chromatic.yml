@@ -5,22 +5,23 @@ jobs:
   chromatic:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
       - name: install
         run: yarn install --frozen-lockfile
       - name: run chromatic
-        run: npx chromatic --only-changed --debug --trace-changed 'expanded' --exit-zero-on-changes --diagnostics --exit-once-uploaded --auto-accept-changes 'main'
+        run: CHROMATIC_INDEX_URL=https://index.staging-chromatic.com npx chromatic --project-token=chpt_8adcafffd1b8cdc --only-changed --debug --trace-changed 'expanded' --exit-zero-on-changes --upload-metadata --exit-once-uploaded --auto-accept-changes 'main'
         env:
-          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          CHROMATIC_PROJECT_TOKEN: chpt_8adcafffd1b8cdc
+          CHROMATIC_INDEX_URL: https://index.staging-chromatic.com
           STORYBOOK_GITHUB_SHA: ${{ github.event.pull_request.head.sha }}
       # - name: Run Chromatic
       #   id: run-chromatic-action
-      #   uses: chromaui/action@v1
+      #   uses: chromaui/action-next@v1
       #   with:
       #     onlyChanged: true
       #     traceChanged: true
@@ -28,7 +29,6 @@ jobs:
       #     exitZeroOnChanges: true
       #     exitOnceUploaded: true
       #     autoAcceptChanges: "main"
-      #     skip: "test-chromatic"
       #   env:
       #     CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
       #     STORYBOOK_GITHUB_SHA: ${{ github.event.pull_request.head.sha }}

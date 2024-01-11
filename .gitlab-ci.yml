@@ -20,4 +20,3 @@ chromatic_publish:
   stage: test
   script:
     - yarn chromatic
-  interruptible: true
