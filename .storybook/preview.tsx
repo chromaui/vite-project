@@ -1,3 +1,5 @@
+import React from 'react';
+
 const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {

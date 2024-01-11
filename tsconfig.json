@@ -11,19 +11,22 @@
     "lib": ["DOM", "DOM.Iterable", "ES2019"],
     "types": ["vitest/globals"],
     "isolatedModules": true,
-    "esModuleInterop": true,
     "jsx": "react-jsx",
     "module": "CommonJS",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "target": "ES2019",
     "strict": true,
-    "allowJs": true,
+    "allowJs": false,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
       "~/*": ["./app/*"]
     },
+    "useDefineForClassFields": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+
     "skipLibCheck": true,
 
     // Remix takes care of building everything in `remix build`.
