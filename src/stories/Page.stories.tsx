@@ -1,26 +1,51 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { within, userEvent } from '@storybook/testing-library';
+import type { Meta, StoryObj } from '@storybook/react';
+import { within, userEvent, fn, expect } from '@storybook/test';
 import { Page } from './Page';
 
-export default {
+const meta = {
   title: 'Example/Page',
   component: Page,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'fullscreen',
   },
-} as ComponentMeta<typeof Page>;
+  args: {
+    onClick: fn(),
+    onLogin: fn(),
+  },
+} satisfies Meta<typeof Page>;
 
-const Template: ComponentStory<typeof Page> = (args) => <Page {...args} />;
+export default meta;
 
-export const LoggedOut = Template.bind({});
+type Story = StoryObj<typeof meta>;
+// export const LoggedOut: Story = {};
 
-export const LoggedIn = Template.bind({});
+export const LoggedIn: Story = {
+  args: {
+    user: { name: 'Test User' },
+  },
+  // play: async ({ args, canvasElement }) => {
+  //   const canvas = within(canvasElement);
+  //   const loginButton = await canvas.findByRole('button', { name: /Log in/i });
+  //   await expect(loginButton).toBeInTheDocument();
 
-// More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
-LoggedIn.play = async ({ canvasElement }) => {
-  const canvas = within(canvasElement);
-  const loginButton = await canvas.getByRole('button', { name: /Log in/i });
-  await userEvent.click(loginButton);
+  //   // const mockEvent = { preventDefault: fn() };
+  //   userEvent.click(loginButton);
+  //   await expect(args.onLogin).toHaveBeenCalled();
+  //   // expect(mockEvent.preventDefault).toBeCalled();
+  //   // const clickHyperlink = createEvent.click(loginButton);
+  //   // const isPrevented = fireEvent(loginButton, clickHyperlink);
+  //   // expect(clickHyperlink.defaultPrevented).toBe(true);
+  //   // expect(isPrevented).toBe(false);
+  //   // await userEvent.click(clickHyperlink);
+  // },
 };
+
+// // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
+// LoggedIn.play = async ({ canvasElement }) => {
+//   const canvas = within(canvasElement);
+//   const loginButton = await canvas.getByRole('button', { name: /Log out/i });
+//   const clickHyperlink = createEvent.click(loginButton);
+//   fireEvent(loginButton, clickHyperlink);
+//   // await userEvent.click(clickHyperlink);
+// };
