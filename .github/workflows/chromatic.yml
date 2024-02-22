@@ -15,11 +15,8 @@ jobs:
         uses: chromaui/action-next@v1
         with:
           onlyChanged: true
-          traceChanged: true
-          diagnostics: true
           exitZeroOnChanges: true
           exitOnceUploaded: true
-          autoAcceptChanges: "main"
+          autoAcceptChanges: 'main'
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          STORYBOOK_GITHUB_SHA: ${{ github.event.pull_request.head.sha }}
