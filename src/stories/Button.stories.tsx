@@ -36,6 +36,7 @@ export const Large: Story = {
   },
 };
 
+// This story might not be needed.
 export const Small: Story = {
   args: {
     size: 'small',
