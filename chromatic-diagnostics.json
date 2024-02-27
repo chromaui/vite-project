@@ -1,0 +1,109 @@
+{
+  "configuration": {},
+  "exitCode": 0,
+  "exitCodeKey": "OK",
+  "flags": {
+    "onlyChanged": "",
+    "exitZeroOnChanged": true,
+    "exitOnceUploaded": "",
+    "debug": true,
+    "outputDir": [],
+    "storybookBuildDir": [],
+    "externals": [],
+    "onlyStoryFiles": [],
+    "onlyStoryNames": [],
+    "untraced": [],
+    "fileHashing": true,
+    "interactive": true,
+    "appCode": []
+  },
+  "git": {
+    "version": "2.43.0",
+    "gitUserEmail": "ethriel3695@gmail.com",
+    "uncommittedHash": "caaa263a087d1acb916ead48599363dfa9164b16",
+    "commit": "abaeda50a36b7a8e7d765eb55ab07f15b3ea13f0",
+    "committedAt": 1709005604000,
+    "committerEmail": "ethriel3695@gmail.com",
+    "committerName": "Reuben Ellis",
+    "branch": "test-cli-canary",
+    "slug": "chromaui/vite-project",
+    "fromCI": false,
+    "parentCommits": [
+      "abaeda50a36b7a8e7d765eb55ab07f15b3ea13f0"
+    ]
+  },
+  "input": [],
+  "isOnboarding": false,
+  "options": {
+    "fromCI": false,
+    "inAction": false,
+    "dryRun": false,
+    "debug": true,
+    "autoAcceptChanges": false,
+    "exitZeroOnChanges": false,
+    "exitOnceUploaded": true,
+    "diagnosticsFile": "chromatic-diagnostics.json",
+    "fileHashing": true,
+    "interactive": false,
+    "isLocalBuild": false,
+    "originalArgv": [
+      "--only-changed",
+      "--exit-zero-on-changed",
+      "--exit-once-uploaded",
+      "--project-token=chpt_32238008c2048e6",
+      "--debug"
+    ],
+    "onlyChanged": true,
+    "logFile": "chromatic.log",
+    "buildScriptName": "build-storybook",
+    "storybookLogFile": "build-storybook.log",
+    "branchName": ""
+  },
+  "packageJson": {
+    "name": "vite-project",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc && vite build",
+      "preview": "vite preview",
+      "storybook": "storybook dev -p 6006",
+      "build-storybook": "storybook build",
+      "chromatic": "npx chromatic --project-token=b7e18a53b1f3 --only-changed --debug --trace-changed 'expanded' --exit-zero-on-changes --diagnostics --exit-once-uploaded --auto-accept-changes 'main'"
+    },
+    "dependencies": {
+      "chromatic": "11.0.1--canary.930.8058537680.0",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.18.13",
+      "@storybook/addon-actions": "^7.6.12",
+      "@storybook/addon-essentials": "^7.6.12",
+      "@storybook/addon-interactions": "^7.6.12",
+      "@storybook/addon-links": "^7.6.12",
+      "@storybook/react": "^7.6.12",
+      "@storybook/react-vite": "^7.6.12",
+      "@storybook/test": "^7.6.12",
+      "@types/react": "^18.0.17",
+      "@types/react-dom": "^18.0.6",
+      "@vitejs/plugin-react": "^4.2.1",
+      "babel-loader": "^8.2.5",
+      "storybook": "^7.6.12",
+      "typescript": "^5.3.3",
+      "vite": "^5.0.12",
+      "vite-plugin-turbosnap": "^1.0.3",
+      "vitest": "^1.2.2"
+    },
+    "readme": "ERROR: No README data found!",
+    "_id": "vite-project@0.0.0"
+  },
+  "packagePath": "/Users/reuben/source/chromaui/vite-project/package.json",
+  "rebuildForBuildId": "65dd5b4a3468f7749e76b18b",
+  "sessionId": "fad9840b-4c67-4c49-bd2b-5252269a1f1c",
+  "skip": true,
+  "startedAt": 1709008815660,
+  "task": "gitInfo",
+  "userError": false
+}
