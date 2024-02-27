@@ -1,7 +1,753 @@
 {
+  "activity": {},
+  "announcedBuild": {
+    "id": "65dd67dc99efc5280166bb93",
+    "number": 3,
+    "status": "PUBLISHED",
+    "autoAcceptChanges": false,
+    "app": {
+      "id": "65dd5a92255950353c8ebe71",
+      "turboSnapAvailability": "UNUSED"
+    },
+    "storybookUrl": "https://65dd5a92255950353c8ebe71-fyfasyidkj.chromatic.com/"
+  },
+  "build": {
+    "id": "65dd67dc99efc5280166bb93",
+    "number": 3,
+    "status": "PASSED",
+    "autoAcceptChanges": false,
+    "app": {
+      "manageUrl": "https://www.chromatic.com/manage?appId=65dd5a92255950353c8ebe71",
+      "setupUrl": "https://www.chromatic.com/setup?appId=65dd5a92255950353c8ebe71",
+      "account": {
+        "exceededThreshold": false,
+        "paymentRequired": false,
+        "billingUrl": "https://www.chromatic.com/billing?accountId=5af25af03c9f2c4bdccc0fcb"
+      },
+      "repository": {
+        "provider": "github"
+      }
+    },
+    "storybookUrl": "https://65dd5a92255950353c8ebe71-fyfasyidkj.chromatic.com/",
+    "commit": "abaeda50a36b7a8e7d765eb55ab07f15b3ea13f0",
+    "committedAt": 1709005604000,
+    "changeCount": 0,
+    "specCount": 7,
+    "componentCount": 3,
+    "testCount": 7,
+    "errorCount": 0,
+    "actualTestCount": 0,
+    "actualCaptureCount": 0,
+    "inheritedCaptureCount": 7,
+    "interactionTestFailuresCount": 0,
+    "webUrl": "https://www.chromatic.com/build?appId=65dd5a92255950353c8ebe71&number=3",
+    "browsers": [
+      {
+        "browser": "chrome"
+      }
+    ],
+    "features": {
+      "uiTests": true,
+      "uiReview": true
+    },
+    "turboSnapEnabled": true,
+    "wasLimited": false,
+    "tests": [
+      {
+        "spec": {
+          "name": "Primary",
+          "component": {
+            "name": "Example/Button",
+            "displayName": "Button"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Secondary",
+          "component": {
+            "name": "Example/Button",
+            "displayName": "Button"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Large",
+          "component": {
+            "name": "Example/Button",
+            "displayName": "Button"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Small",
+          "component": {
+            "name": "Example/Button",
+            "displayName": "Button"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Logged In",
+          "component": {
+            "name": "Example/Header",
+            "displayName": "Header"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Logged Out",
+          "component": {
+            "name": "Example/Header",
+            "displayName": "Header"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Logged In",
+          "component": {
+            "name": "Example/Page",
+            "displayName": "Page"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      }
+    ]
+  },
+  "buildCommand": "yarn run build-storybook --output-dir /var/folders/_s/tmd6bb_16hxcklzlsbkk9m6r0000gn/T/chromatic--89645-taU3YJYfueYT --webpack-stats-json /var/folders/_s/tmd6bb_16hxcklzlsbkk9m6r0000gn/T/chromatic--89645-taU3YJYfueYT",
+  "buildLogFile": "/Users/reuben/source/chromaui/vite-project/build-storybook.log",
   "configuration": {},
+  "environment": {},
   "exitCode": 0,
   "exitCodeKey": "OK",
+  "fileInfo": {
+    "lengths": [
+      {
+        "pathname": "assets/Button-7wJoiOD8.js",
+        "contentLength": 1185,
+        "knownAs": "assets/Button-7wJoiOD8.js"
+      },
+      {
+        "pathname": "assets/Button-fYg1sX5e.css",
+        "contentLength": 519,
+        "knownAs": "assets/Button-fYg1sX5e.css"
+      },
+      {
+        "pathname": "assets/Button.stories-T4kOCOYG.js",
+        "contentLength": 1447,
+        "knownAs": "assets/Button.stories-T4kOCOYG.js"
+      },
+      {
+        "pathname": "assets/Color-6VNJS4EI-UPjJ2Mxt.js",
+        "contentLength": 30988,
+        "knownAs": "assets/Color-6VNJS4EI-UPjJ2Mxt.js"
+      },
+      {
+        "pathname": "assets/DocsRenderer-NNNQARDV-TwY7l0Xz.js",
+        "contentLength": 350,
+        "knownAs": "assets/DocsRenderer-NNNQARDV-TwY7l0Xz.js"
+      },
+      {
+        "pathname": "assets/Header-KlU6nDLW.js",
+        "contentLength": 564769,
+        "knownAs": "assets/Header-KlU6nDLW.js"
+      },
+      {
+        "pathname": "assets/Header-i3TUd7oW.css",
+        "contentLength": 433,
+        "knownAs": "assets/Header-i3TUd7oW.css"
+      },
+      {
+        "pathname": "assets/Header.stories-vyN2dOLN.js",
+        "contentLength": 1468,
+        "knownAs": "assets/Header.stories-vyN2dOLN.js"
+      },
+      {
+        "pathname": "assets/Introduction-DfH-rZsj.js",
+        "contentLength": 20249,
+        "knownAs": "assets/Introduction-DfH-rZsj.js"
+      },
+      {
+        "pathname": "assets/Page-8GS3dqlC.css",
+        "contentLength": 854,
+        "knownAs": "assets/Page-8GS3dqlC.css"
+      },
+      {
+        "pathname": "assets/Page.stories-5dGBrxkX.js",
+        "contentLength": 3508,
+        "knownAs": "assets/Page.stories-5dGBrxkX.js"
+      },
+      {
+        "pathname": "assets/WithTooltip-V3YHNWJZ-Zfj3Bo90.js",
+        "contentLength": 376,
+        "knownAs": "assets/WithTooltip-V3YHNWJZ-Zfj3Bo90.js"
+      },
+      {
+        "pathname": "assets/_commonjsHelpers-4gQjN7DL.js",
+        "contentLength": 691,
+        "knownAs": "assets/_commonjsHelpers-4gQjN7DL.js"
+      },
+      {
+        "pathname": "assets/chunk-HLWAVYOI-BQkVIZ48.js",
+        "contentLength": 540728,
+        "knownAs": "assets/chunk-HLWAVYOI-BQkVIZ48.js"
+      },
+      {
+        "pathname": "assets/colors-Tycesd3e.svg",
+        "contentLength": 8508,
+        "knownAs": "assets/colors-Tycesd3e.svg"
+      },
+      {
+        "pathname": "assets/entry-preview-docs-mAwDvs1M.js",
+        "contentLength": 215517,
+        "knownAs": "assets/entry-preview-docs-mAwDvs1M.js"
+      },
+      {
+        "pathname": "assets/entry-preview-oVjRAT5i.js",
+        "contentLength": 1121,
+        "knownAs": "assets/entry-preview-oVjRAT5i.js"
+      },
+      {
+        "pathname": "assets/formatter-SWP5E3XI-nfxSJo6v.js",
+        "contentLength": 605430,
+        "knownAs": "assets/formatter-SWP5E3XI-nfxSJo6v.js"
+      },
+      {
+        "pathname": "assets/iframe-FZIHf4Ed.js",
+        "contentLength": 4737,
+        "knownAs": "assets/iframe-FZIHf4Ed.js"
+      },
+      {
+        "pathname": "assets/index-4g5l5LRQ.js",
+        "contentLength": 7162,
+        "knownAs": "assets/index-4g5l5LRQ.js"
+      },
+      {
+        "pathname": "assets/index-MVbLLYTZ.js",
+        "contentLength": 78397,
+        "knownAs": "assets/index-MVbLLYTZ.js"
+      },
+      {
+        "pathname": "assets/index-PPLHz8o0.js",
+        "contentLength": 767,
+        "knownAs": "assets/index-PPLHz8o0.js"
+      },
+      {
+        "pathname": "assets/index-_VGcpBFS.js",
+        "contentLength": 577,
+        "knownAs": "assets/index-_VGcpBFS.js"
+      },
+      {
+        "pathname": "assets/index-ogXoivrg.js",
+        "contentLength": 2598,
+        "knownAs": "assets/index-ogXoivrg.js"
+      },
+      {
+        "pathname": "assets/jsx-runtime-vNq4Oc-g.js",
+        "contentLength": 918,
+        "knownAs": "assets/jsx-runtime-vNq4Oc-g.js"
+      },
+      {
+        "pathname": "assets/preview-70qxeh8F.js",
+        "contentLength": 72089,
+        "knownAs": "assets/preview-70qxeh8F.js"
+      },
+      {
+        "pathname": "assets/preview-FGBBj6fc.js",
+        "contentLength": 133,
+        "knownAs": "assets/preview-FGBBj6fc.js"
+      },
+      {
+        "pathname": "assets/preview-FekBEZxm.js",
+        "contentLength": 3190,
+        "knownAs": "assets/preview-FekBEZxm.js"
+      },
+      {
+        "pathname": "assets/preview-OnO0tzRj.js",
+        "contentLength": 5230,
+        "knownAs": "assets/preview-OnO0tzRj.js"
+      },
+      {
+        "pathname": "assets/preview-TkXSQy1x.js",
+        "contentLength": 8110,
+        "knownAs": "assets/preview-TkXSQy1x.js"
+      },
+      {
+        "pathname": "assets/preview-VI2eoWmp.js",
+        "contentLength": 636,
+        "knownAs": "assets/preview-VI2eoWmp.js"
+      },
+      {
+        "pathname": "assets/preview-Z_WFPktY.js",
+        "contentLength": 696,
+        "knownAs": "assets/preview-Z_WFPktY.js"
+      },
+      {
+        "pathname": "assets/preview-bEa2SesL.js",
+        "contentLength": 855,
+        "knownAs": "assets/preview-bEa2SesL.js"
+      },
+      {
+        "pathname": "assets/preview-u8M_OEO2.js",
+        "contentLength": 7616,
+        "knownAs": "assets/preview-u8M_OEO2.js"
+      },
+      {
+        "pathname": "assets/react-18-0wh8ubQX.js",
+        "contentLength": 134538,
+        "knownAs": "assets/react-18-0wh8ubQX.js"
+      },
+      {
+        "pathname": "assets/syntaxhighlighter-V7JZZA35-uaAQkXHG.js",
+        "contentLength": 387,
+        "knownAs": "assets/syntaxhighlighter-V7JZZA35-uaAQkXHG.js"
+      },
+      {
+        "pathname": "favicon.svg",
+        "contentLength": 1292,
+        "knownAs": "favicon.svg"
+      },
+      {
+        "pathname": "iframe.html",
+        "contentLength": 12784,
+        "knownAs": "iframe.html"
+      },
+      {
+        "pathname": "index.html",
+        "contentLength": 3197,
+        "knownAs": "index.html"
+      },
+      {
+        "pathname": "index.json",
+        "contentLength": 2132,
+        "knownAs": "index.json"
+      },
+      {
+        "pathname": "preview-stats.json",
+        "contentLength": 5161,
+        "knownAs": "preview-stats.json"
+      },
+      {
+        "pathname": "project.json",
+        "contentLength": 938,
+        "knownAs": "project.json"
+      },
+      {
+        "pathname": "sb-addons/essentials-actions-2/manager-bundle.js",
+        "contentLength": 40463,
+        "knownAs": "sb-addons/essentials-actions-2/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-actions-2/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/essentials-actions-2/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/essentials-backgrounds-3/manager-bundle.js",
+        "contentLength": 9715,
+        "knownAs": "sb-addons/essentials-backgrounds-3/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-backgrounds-3/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/essentials-backgrounds-3/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/essentials-controls-1/manager-bundle.js",
+        "contentLength": 374672,
+        "knownAs": "sb-addons/essentials-controls-1/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-controls-1/manager-bundle.js.LEGAL.txt",
+        "contentLength": 631,
+        "knownAs": "sb-addons/essentials-controls-1/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/essentials-measure-6/manager-bundle.js",
+        "contentLength": 2454,
+        "knownAs": "sb-addons/essentials-measure-6/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-measure-6/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/essentials-measure-6/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/essentials-outline-7/manager-bundle.js",
+        "contentLength": 2496,
+        "knownAs": "sb-addons/essentials-outline-7/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-outline-7/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/essentials-outline-7/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/essentials-toolbars-5/manager-bundle.js",
+        "contentLength": 4912,
+        "knownAs": "sb-addons/essentials-toolbars-5/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-toolbars-5/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/essentials-toolbars-5/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/essentials-viewport-4/manager-bundle.js",
+        "contentLength": 10399,
+        "knownAs": "sb-addons/essentials-viewport-4/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-viewport-4/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/essentials-viewport-4/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/interactions-8/manager-bundle.js",
+        "contentLength": 94892,
+        "knownAs": "sb-addons/interactions-8/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/interactions-8/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/interactions-8/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/links-0/manager-bundle.js",
+        "contentLength": 837,
+        "knownAs": "sb-addons/links-0/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/links-0/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/links-0/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-common-assets/fonts.css",
+        "contentLength": 675,
+        "knownAs": "sb-common-assets/fonts.css"
+      },
+      {
+        "pathname": "sb-common-assets/nunito-sans-bold-italic.woff2",
+        "contentLength": 49460,
+        "knownAs": "sb-common-assets/nunito-sans-bold-italic.woff2"
+      },
+      {
+        "pathname": "sb-common-assets/nunito-sans-bold.woff2",
+        "contentLength": 47144,
+        "knownAs": "sb-common-assets/nunito-sans-bold.woff2"
+      },
+      {
+        "pathname": "sb-common-assets/nunito-sans-italic.woff2",
+        "contentLength": 49620,
+        "knownAs": "sb-common-assets/nunito-sans-italic.woff2"
+      },
+      {
+        "pathname": "sb-common-assets/nunito-sans-regular.woff2",
+        "contentLength": 47072,
+        "knownAs": "sb-common-assets/nunito-sans-regular.woff2"
+      },
+      {
+        "pathname": "sb-manager/WithTooltip-V3YHNWJZ-LVYLGZW2.js",
+        "contentLength": 196,
+        "knownAs": "sb-manager/WithTooltip-V3YHNWJZ-LVYLGZW2.js"
+      },
+      {
+        "pathname": "sb-manager/chunk-2IXBUOFS.js",
+        "contentLength": 184295,
+        "knownAs": "sb-manager/chunk-2IXBUOFS.js"
+      },
+      {
+        "pathname": "sb-manager/chunk-INSKDKQB.js",
+        "contentLength": 637557,
+        "knownAs": "sb-manager/chunk-INSKDKQB.js"
+      },
+      {
+        "pathname": "sb-manager/chunk-NGTUFCUO.js",
+        "contentLength": 58927,
+        "knownAs": "sb-manager/chunk-NGTUFCUO.js"
+      },
+      {
+        "pathname": "sb-manager/chunk-NMB3SATH.js",
+        "contentLength": 846318,
+        "knownAs": "sb-manager/chunk-NMB3SATH.js"
+      },
+      {
+        "pathname": "sb-manager/chunk-ZEU7PDD3.js",
+        "contentLength": 7023,
+        "knownAs": "sb-manager/chunk-ZEU7PDD3.js"
+      },
+      {
+        "pathname": "sb-manager/formatter-SWP5E3XI-7BGIK6BL.js",
+        "contentLength": 604977,
+        "knownAs": "sb-manager/formatter-SWP5E3XI-7BGIK6BL.js"
+      },
+      {
+        "pathname": "sb-manager/globals-module-info.js",
+        "contentLength": 5841,
+        "knownAs": "sb-manager/globals-module-info.js"
+      },
+      {
+        "pathname": "sb-manager/globals.js",
+        "contentLength": 1485,
+        "knownAs": "sb-manager/globals.js"
+      },
+      {
+        "pathname": "sb-manager/index.js",
+        "contentLength": 218,
+        "knownAs": "sb-manager/index.js"
+      },
+      {
+        "pathname": "sb-manager/runtime.js",
+        "contentLength": 7945,
+        "knownAs": "sb-manager/runtime.js"
+      },
+      {
+        "pathname": "sb-manager/syntaxhighlighter-V7JZZA35-DXZCI2WR.js",
+        "contentLength": 280,
+        "knownAs": "sb-manager/syntaxhighlighter-V7JZZA35-DXZCI2WR.js"
+      },
+      {
+        "pathname": "sb-preview/globals.js",
+        "contentLength": 1750,
+        "knownAs": "sb-preview/globals.js"
+      },
+      {
+        "pathname": "sb-preview/runtime.js",
+        "contentLength": 349835,
+        "knownAs": "sb-preview/runtime.js"
+      },
+      {
+        "pathname": "stories.json",
+        "contentLength": 3634,
+        "knownAs": "stories.json"
+      },
+      {
+        "pathname": "vite.svg",
+        "contentLength": 1497,
+        "knownAs": "vite.svg"
+      }
+    ],
+    "paths": [
+      "assets/Button-7wJoiOD8.js",
+      "assets/Button-fYg1sX5e.css",
+      "assets/Button.stories-T4kOCOYG.js",
+      "assets/Color-6VNJS4EI-UPjJ2Mxt.js",
+      "assets/DocsRenderer-NNNQARDV-TwY7l0Xz.js",
+      "assets/Header-KlU6nDLW.js",
+      "assets/Header-i3TUd7oW.css",
+      "assets/Header.stories-vyN2dOLN.js",
+      "assets/Introduction-DfH-rZsj.js",
+      "assets/Page-8GS3dqlC.css",
+      "assets/Page.stories-5dGBrxkX.js",
+      "assets/WithTooltip-V3YHNWJZ-Zfj3Bo90.js",
+      "assets/_commonjsHelpers-4gQjN7DL.js",
+      "assets/chunk-HLWAVYOI-BQkVIZ48.js",
+      "assets/colors-Tycesd3e.svg",
+      "assets/entry-preview-docs-mAwDvs1M.js",
+      "assets/entry-preview-oVjRAT5i.js",
+      "assets/formatter-SWP5E3XI-nfxSJo6v.js",
+      "assets/iframe-FZIHf4Ed.js",
+      "assets/index-4g5l5LRQ.js",
+      "assets/index-MVbLLYTZ.js",
+      "assets/index-PPLHz8o0.js",
+      "assets/index-_VGcpBFS.js",
+      "assets/index-ogXoivrg.js",
+      "assets/jsx-runtime-vNq4Oc-g.js",
+      "assets/preview-70qxeh8F.js",
+      "assets/preview-FGBBj6fc.js",
+      "assets/preview-FekBEZxm.js",
+      "assets/preview-OnO0tzRj.js",
+      "assets/preview-TkXSQy1x.js",
+      "assets/preview-VI2eoWmp.js",
+      "assets/preview-Z_WFPktY.js",
+      "assets/preview-bEa2SesL.js",
+      "assets/preview-u8M_OEO2.js",
+      "assets/react-18-0wh8ubQX.js",
+      "assets/syntaxhighlighter-V7JZZA35-uaAQkXHG.js",
+      "favicon.svg",
+      "iframe.html",
+      "index.html",
+      "index.json",
+      "project.json",
+      "sb-addons/essentials-actions-2/manager-bundle.js",
+      "sb-addons/essentials-actions-2/manager-bundle.js.LEGAL.txt",
+      "sb-addons/essentials-backgrounds-3/manager-bundle.js",
+      "sb-addons/essentials-backgrounds-3/manager-bundle.js.LEGAL.txt",
+      "sb-addons/essentials-controls-1/manager-bundle.js",
+      "sb-addons/essentials-controls-1/manager-bundle.js.LEGAL.txt",
+      "sb-addons/essentials-measure-6/manager-bundle.js",
+      "sb-addons/essentials-measure-6/manager-bundle.js.LEGAL.txt",
+      "sb-addons/essentials-outline-7/manager-bundle.js",
+      "sb-addons/essentials-outline-7/manager-bundle.js.LEGAL.txt",
+      "sb-addons/essentials-toolbars-5/manager-bundle.js",
+      "sb-addons/essentials-toolbars-5/manager-bundle.js.LEGAL.txt",
+      "sb-addons/essentials-viewport-4/manager-bundle.js",
+      "sb-addons/essentials-viewport-4/manager-bundle.js.LEGAL.txt",
+      "sb-addons/interactions-8/manager-bundle.js",
+      "sb-addons/interactions-8/manager-bundle.js.LEGAL.txt",
+      "sb-addons/links-0/manager-bundle.js",
+      "sb-addons/links-0/manager-bundle.js.LEGAL.txt",
+      "sb-common-assets/fonts.css",
+      "sb-common-assets/nunito-sans-bold-italic.woff2",
+      "sb-common-assets/nunito-sans-bold.woff2",
+      "sb-common-assets/nunito-sans-italic.woff2",
+      "sb-common-assets/nunito-sans-regular.woff2",
+      "sb-manager/WithTooltip-V3YHNWJZ-LVYLGZW2.js",
+      "sb-manager/chunk-2IXBUOFS.js",
+      "sb-manager/chunk-INSKDKQB.js",
+      "sb-manager/chunk-NGTUFCUO.js",
+      "sb-manager/chunk-NMB3SATH.js",
+      "sb-manager/chunk-ZEU7PDD3.js",
+      "sb-manager/formatter-SWP5E3XI-7BGIK6BL.js",
+      "sb-manager/globals-module-info.js",
+      "sb-manager/globals.js",
+      "sb-manager/index.js",
+      "sb-manager/runtime.js",
+      "sb-manager/syntaxhighlighter-V7JZZA35-DXZCI2WR.js",
+      "sb-preview/globals.js",
+      "sb-preview/runtime.js",
+      "stories.json",
+      "vite.svg"
+    ],
+    "statsPath": "/var/folders/_s/tmd6bb_16hxcklzlsbkk9m6r0000gn/T/chromatic--89645-taU3YJYfueYT/preview-stats.json",
+    "total": 5799501,
+    "hashes": {
+      "assets/Button-7wJoiOD8.js": "d48c6a03d2f66ae9",
+      "assets/Button-fYg1sX5e.css": "f72f8f5f293ab54b",
+      "assets/Button.stories-T4kOCOYG.js": "60883f5076daba9e",
+      "assets/Color-6VNJS4EI-UPjJ2Mxt.js": "875f77860d773602",
+      "assets/DocsRenderer-NNNQARDV-TwY7l0Xz.js": "e7c30f596261eebf",
+      "assets/Header-KlU6nDLW.js": "f88d0510a46f28e7",
+      "assets/Header-i3TUd7oW.css": "b585459bc856ae04",
+      "assets/Header.stories-vyN2dOLN.js": "7ef6a90a49a2cef5",
+      "assets/Introduction-DfH-rZsj.js": "a2152ca84ac040e5",
+      "assets/Page-8GS3dqlC.css": "4877f7087e52a6ed",
+      "assets/Page.stories-5dGBrxkX.js": "98a3affaea72f2fb",
+      "assets/WithTooltip-V3YHNWJZ-Zfj3Bo90.js": "d376733ae068515b",
+      "assets/_commonjsHelpers-4gQjN7DL.js": "1f1b8e877e29c158",
+      "assets/chunk-HLWAVYOI-BQkVIZ48.js": "da5ccac2ccb19465",
+      "assets/colors-Tycesd3e.svg": "d8002bff71f373c4",
+      "assets/entry-preview-docs-mAwDvs1M.js": "272dd71a72970186",
+      "assets/entry-preview-oVjRAT5i.js": "2549adc5f59262c2",
+      "assets/formatter-SWP5E3XI-nfxSJo6v.js": "985a842b84606177",
+      "assets/iframe-FZIHf4Ed.js": "e322cb355b336a74",
+      "assets/index-4g5l5LRQ.js": "e0cdd33366f8bcee",
+      "assets/index-MVbLLYTZ.js": "3b8ae03fc24098e5",
+      "assets/index-PPLHz8o0.js": "894f6b01402f1ee1",
+      "assets/index-_VGcpBFS.js": "5be23f8dcd0a2071",
+      "assets/index-ogXoivrg.js": "6f49df370c3e90da",
+      "assets/jsx-runtime-vNq4Oc-g.js": "914267ca1b6c0097",
+      "assets/preview-70qxeh8F.js": "a3d1b313a6a34f74",
+      "assets/preview-FGBBj6fc.js": "1c9f13506ce9ad90",
+      "assets/preview-FekBEZxm.js": "5f9ae27020ebf4b1",
+      "assets/preview-OnO0tzRj.js": "4ba6a4ac9a0fb2bb",
+      "assets/preview-TkXSQy1x.js": "5c1fba75a4e4d2fc",
+      "assets/preview-VI2eoWmp.js": "4d7e2b24c2e6bda8",
+      "assets/preview-Z_WFPktY.js": "2eca2057af00ebc2",
+      "assets/preview-bEa2SesL.js": "4a57157b09d45d4c",
+      "assets/preview-u8M_OEO2.js": "887cd331e6e988d7",
+      "assets/react-18-0wh8ubQX.js": "fbe4873f5548aed9",
+      "assets/syntaxhighlighter-V7JZZA35-uaAQkXHG.js": "201c31f18119cab6",
+      "favicon.svg": "c838c315c746b6e6",
+      "iframe.html": "bdfb5e45d46e2619",
+      "index.html": "0d23484d65734868",
+      "index.json": "6cc5fd1cfd940692",
+      "project.json": "001d59ed91c788d2",
+      "sb-addons/essentials-actions-2/manager-bundle.js": "fc2ce12327b3eaf8",
+      "sb-addons/essentials-actions-2/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/essentials-backgrounds-3/manager-bundle.js": "f731dda4d4fe2402",
+      "sb-addons/essentials-backgrounds-3/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/essentials-controls-1/manager-bundle.js": "1637d61ce7af1850",
+      "sb-addons/essentials-controls-1/manager-bundle.js.LEGAL.txt": "8a8b3af0e390b5bc",
+      "sb-addons/essentials-measure-6/manager-bundle.js": "3ff168fe626f1547",
+      "sb-addons/essentials-measure-6/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/essentials-outline-7/manager-bundle.js": "d9403610ad0c5929",
+      "sb-addons/essentials-outline-7/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/essentials-toolbars-5/manager-bundle.js": "9404cd66d870c01d",
+      "sb-addons/essentials-toolbars-5/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/essentials-viewport-4/manager-bundle.js": "17a68c9aaa164a19",
+      "sb-addons/essentials-viewport-4/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/interactions-8/manager-bundle.js": "459b92916bfa8bc2",
+      "sb-addons/interactions-8/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/links-0/manager-bundle.js": "3d836764f86c50ea",
+      "sb-addons/links-0/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-common-assets/fonts.css": "5fe607dcb520f0b7",
+      "sb-common-assets/nunito-sans-bold-italic.woff2": "d64464b3594b3fb9",
+      "sb-common-assets/nunito-sans-bold.woff2": "0bd5b61b7fb7f7d5",
+      "sb-common-assets/nunito-sans-italic.woff2": "b7807d9de055e9a0",
+      "sb-common-assets/nunito-sans-regular.woff2": "6687b7be04c2debe",
+      "sb-manager/WithTooltip-V3YHNWJZ-LVYLGZW2.js": "9c4bb7dce8c84c95",
+      "sb-manager/chunk-2IXBUOFS.js": "4f5784161211158f",
+      "sb-manager/chunk-INSKDKQB.js": "63a0985c8b0164b8",
+      "sb-manager/chunk-NGTUFCUO.js": "18884d9e043dda68",
+      "sb-manager/chunk-NMB3SATH.js": "dfacbd66043bc1a1",
+      "sb-manager/chunk-ZEU7PDD3.js": "45baeb35b96855f5",
+      "sb-manager/formatter-SWP5E3XI-7BGIK6BL.js": "c07bff5bffb7f3dd",
+      "sb-manager/globals-module-info.js": "550d0c8fcdf220cd",
+      "sb-manager/globals.js": "28c4c188e2bccfa6",
+      "sb-manager/index.js": "dd8547f8187415a5",
+      "sb-manager/runtime.js": "4c7d317c1b89310c",
+      "sb-manager/syntaxhighlighter-V7JZZA35-DXZCI2WR.js": "4bfcd9bb07ba37fb",
+      "sb-preview/globals.js": "9083b822aa8df5cf",
+      "sb-preview/runtime.js": "d8b6b4466a676f6c",
+      "stories.json": "6d87e31973ce3519",
+      "vite.svg": "b81e9b0882317145"
+    }
+  },
   "flags": {
     "onlyChanged": "",
     "exitZeroOnChanged": true,
@@ -20,9 +766,9 @@
   "git": {
     "version": "2.43.0",
     "gitUserEmail": "ethriel3695@gmail.com",
-    "uncommittedHash": "caaa263a087d1acb916ead48599363dfa9164b16",
-    "commit": "abaeda50a36b7a8e7d765eb55ab07f15b3ea13f0",
-    "committedAt": 1709005604000,
+    "uncommittedHash": "",
+    "commit": "bc8225f4939b2b03e1a6655efc29a288a49327cd",
+    "committedAt": 1709008853000,
     "committerEmail": "ethriel3695@gmail.com",
     "committerName": "Reuben Ellis",
     "branch": "test-cli-canary",
@@ -30,10 +776,21 @@
     "fromCI": false,
     "parentCommits": [
       "abaeda50a36b7a8e7d765eb55ab07f15b3ea13f0"
-    ]
+    ],
+    "baselineCommits": [
+      "abaeda50a36b7a8e7d765eb55ab07f15b3ea13f0"
+    ],
+    "changedFiles": [
+      ".github/workflows/chromatic.yml",
+      "chromatic-diagnostics.json"
+    ],
+    "packageMetadataChanges": [],
+    "replacementBuildIds": []
   },
   "input": [],
   "isOnboarding": false,
+  "isPublishOnly": false,
+  "onlyStoryFiles": [],
   "options": {
     "fromCI": false,
     "inAction": false,
@@ -100,10 +857,88 @@
     "_id": "vite-project@0.0.0"
   },
   "packagePath": "/Users/reuben/source/chromaui/vite-project/package.json",
-  "rebuildForBuildId": "65dd5b4a3468f7749e76b18b",
-  "sessionId": "fad9840b-4c67-4c49-bd2b-5252269a1f1c",
-  "skip": true,
-  "startedAt": 1709008815660,
-  "task": "gitInfo",
+  "runtimeMetadata": {
+    "nodePlatform": "darwin",
+    "nodeVersion": "21.6.2",
+    "packageManager": "yarn",
+    "packageManagerVersion": "1.22.19"
+  },
+  "sentinelUrls": [],
+  "sessionId": "6b3456a9-19d1-47b0-9a64-9ef238682ebe",
+  "skipSnapshots": true,
+  "sourceDir": "/var/folders/_s/tmd6bb_16hxcklzlsbkk9m6r0000gn/T/chromatic--89645-taU3YJYfueYT",
+  "startedAt": 1709008876303,
+  "storybook": {
+    "addons": [
+      {
+        "name": "links",
+        "packageName": "@storybook/addon-links",
+        "packageVersion": "^7.6.12"
+      },
+      {
+        "name": "essentials",
+        "packageName": "@storybook/addon-essentials",
+        "packageVersion": "^7.6.12"
+      },
+      {
+        "name": "interactions",
+        "packageName": "@storybook/addon-interactions",
+        "packageVersion": "^7.6.12"
+      }
+    ],
+    "viewLayer": "react",
+    "version": "7.6.12",
+    "builder": {
+      "name": "@storybook/react-vite",
+      "packageVersion": "7.6.12"
+    }
+  },
+  "storybookUrl": "https://65dd5a92255950353c8ebe71-fyfasyidkj.chromatic.com/",
+  "task": "verify",
+  "turboSnap": {
+    "rootPath": "/Users/reuben/source/chromaui/vite-project",
+    "baseDir": "",
+    "storybookDir": ".storybook",
+    "staticDirs": [],
+    "globs": [
+      "/virtual:/@storybook/builder-vite/setup-addons.js",
+      "/virtual:/@storybook/builder-vite/storybook-stories.js",
+      ".storybook/preview.tsx"
+    ],
+    "modules": [
+      "sb-preview/runtime.js",
+      "/virtual:/@storybook/builder-vite/vite-app.js",
+      "/virtual:/@storybook/builder-vite/setup-addons.js",
+      "/virtual:/@storybook/builder-vite/storybook-stories.js",
+      ".storybook/preview.tsx",
+      "src/stories/Button.stories.tsx",
+      "src/stories/Header.stories.tsx",
+      "src/stories/Introduction.mdx",
+      "src/stories/Page.stories.tsx",
+      "src/stories/Header.tsx",
+      "src/stories/Button.tsx",
+      "src/stories/Page.tsx",
+      "src/stories/assets/code-brackets.svg",
+      "src/stories/assets/colors.svg",
+      "src/stories/assets/comments.svg",
+      "src/stories/assets/direction.svg",
+      "src/stories/assets/flow.svg",
+      "src/stories/assets/plugin.svg",
+      "src/stories/assets/repo.svg",
+      "src/stories/assets/stackalt.svg",
+      "src/stories/header.css",
+      "src/stories/button.css",
+      "src/stories/page.css"
+    ],
+    "tracedFiles": [
+      ".github/workflows/chromatic.yml",
+      "chromatic-diagnostics.json"
+    ],
+    "tracedPaths": {},
+    "affectedModuleIds": {}
+  },
+  "untracedFiles": [],
+  "uploadedBytes": 5794340,
+  "uploadedFiles": 80,
   "userError": false
 }
