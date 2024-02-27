@@ -12,7 +12,7 @@
     "chromatic": "npx chromatic --project-token=b7e18a53b1f3 --only-changed --debug --trace-changed 'expanded' --exit-zero-on-changes --diagnostics --exit-once-uploaded --auto-accept-changes 'main'"
   },
   "dependencies": {
-    "chromatic": "11.0.1--canary.930.8058537680.0",
+    "chromatic": "11.0.1--canary.930.8059780905.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
