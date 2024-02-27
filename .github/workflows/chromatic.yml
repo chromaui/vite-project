@@ -14,9 +14,9 @@ jobs:
       - name: install
         run: yarn install --frozen-lockfile
       - name: run chromatic
-        run: npx chromatic --project-token=chpt_8adcafffd1b8cdc --only-changed --exit-zero-on-changed --exit-once-uploaded --auto-accept-changes 'main'
+        run: npx chromatic --only-changed --exit-zero-on-changed --exit-once-uploaded --auto-accept-changes 'main'
         env:
-          CHROMATIC_PROJECT_TOKEN: chpt_8adcafffd1b8cdc
+          CHROMATIC_PROJECT_TOKEN: chpt_32238008c2048e6
           # CHROMATIC_INDEX_URL: https://index.staging-chromatic.com
           CHROMATIC_GITHUB_UI_TESTS_COMMIT_STATUS_CONTEXT: 'UI Tests - If failure, ping ethriel3695'
       # - name: Run Chromatic
