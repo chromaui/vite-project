@@ -10,14 +10,13 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 22
       - name: install
-        run: yarn install --frozen-lockfile
+        run: pnpm install
       - name: run chromatic
-        run: CHROMATIC_GITHUB_UI_TESTS_COMMIT_STATUS_CONTEXT='UI Tests - If failure, ping @ethriel3695' CHROMATIC_INDEX_URL=https://index.staging-chromatic.com npx chromatic --project-token=chpt_8adcafffd1b8cdc --only-changed --exit-zero-on-changed --exit-once-uploaded --auto-accept-changes 'main'
+        run: pnpm chromatic
         env:
           CHROMATIC_PROJECT_TOKEN: chpt_8adcafffd1b8cdc
-          CHROMATIC_INDEX_URL: https://index.staging-chromatic.com
       # - name: Run Chromatic
       #   id: run-chromatic-action
       #   uses: chromaui/action-next@v1
