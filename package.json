@@ -12,7 +12,7 @@
     "chromatic": "chromatic --project-token=chpt_32238008c2048e6 --only-changed --debug --trace-changed 'expanded' --exit-zero-on-changes --exit-once-uploaded --auto-accept-changes 'main'"
   },
   "dependencies": {
-    "chromatic": "11.5.2--canary.1003.9372376204.0",
+    "chromatic": "11.5.4--canary.1006.9474473692.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

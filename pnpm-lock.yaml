@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       chromatic:
-        specifier: 11.5.2--canary.1003.9372376204.0
-        version: 11.5.2--canary.1003.9372376204.0
+        specifier: 11.5.4--canary.1006.9474473692.0
+        version: 11.5.4--canary.1006.9474473692.0
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -1885,8 +1885,8 @@ packages:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
 
-  chromatic@11.5.2--canary.1003.9372376204.0:
-    resolution: {integrity: sha512-fG25dQyw7snutblHOs3zr9YEHhghk+5mXJ7uPCpImZECWTXG7+qlFrMZUeH1IhUvDmunGaZcHFtoKnF625EY6g==}
+  chromatic@11.5.4--canary.1006.9474473692.0:
+    resolution: {integrity: sha512-JznER7sIj0wIp7ULpI7NKIyYi6gHrbHQlJFfFHxT09ZBd0kSm1Yfsq/i3ZheWQH7ocYzGfbs5XCX7n5Mi5ot9g==}
     hasBin: true
     peerDependencies:
       '@chromatic-com/cypress': ^0.*.* || ^1.0.0
@@ -6398,7 +6398,7 @@ snapshots:
 
   chownr@2.0.0: {}
 
-  chromatic@11.5.2--canary.1003.9372376204.0: {}
+  chromatic@11.5.4--canary.1006.9474473692.0: {}
 
   chrome-trace-event@1.0.4: {}
 
