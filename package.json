@@ -33,6 +33,5 @@
     "vite-plugin-turbosnap": "^1.0.3",
     "vitest": "^1.2.2"
   },
-  "readme": "ERROR: No README data found!",
-  "_id": "vite-project@0.0.0"
+  "_id": "vite-project@0.1.0"
 }
