@@ -15,14 +15,8 @@ steps:
 - task: UseNode@1
   inputs:
     version: '18.x'
-- task: Cache@2
-  inputs:
-    key: 'pnpm | "$(Agent.OS)" | pnpm-lock.yaml'
-    path: $(pnpm_config_cache)
-  displayName: 'Cache pnpm'
 - script: |
     curl -fsSL https://get.pnpm.io/install.sh | sh -
-    pnpm config set store-dir $(pnpm_config_cache)
   displayName: "Setup pnpm"
 
 - script: pnpm install
