@@ -21,7 +21,7 @@ steps:
     path: $(pnpm_config_cache)
   displayName: 'Cache pnpm'
 - script: |
-    curl -f https://get.pnpm.io/v9.4.0.js | node - add --global pnpm@9.4.0
+    curl -fsSL https://get.pnpm.io/install.sh | sh -
     pnpm config set store-dir $(pnpm_config_cache)
   displayName: "Setup pnpm"
 
