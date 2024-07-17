@@ -1,0 +1,23 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- checkout:
+  fetchDepth: 0
+- task: UseNode@1
+  inputs:
+    version: '18.x'
+
+- script: |
+    yarn install
+    yarn build-storybook
+    npx chromatic --project-token=chpt_d1f0c3a104744ba --only-changed --exit-zero-on-changes --exit-once-uploaded
+  displayName: 'Run a multi-line script'
