@@ -16,8 +16,6 @@ steps:
   inputs:
     version: '18.x'
 
-- script: |
-    pnpm install
-    pnpm build-storybook
-    pnpm chromatic
-  displayName: 'Run a multi-line script'
+- script: pnpm install
+- script: pnpm build-storybook
+- script: pnpm chromatic
