@@ -11,7 +11,7 @@ pool:
 
 steps:
 - checkout: self
-  fetchDepth: 0
+  fetchDepth: '0'
 - task: UseNode@1
   inputs:
     version: '18.x'
