@@ -19,5 +19,5 @@ steps:
 - script: |
     pnpm install
     pnpm build-storybook
-    npx chromatic --project-token=chpt_d1f0c3a104744ba --only-changed --exit-zero-on-changes --exit-once-uploaded --storybook-build-dir='storybook-static'
+    pnpm chromatic
   displayName: 'Run a multi-line script'
