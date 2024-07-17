@@ -16,7 +16,7 @@ steps:
   inputs:
     version: '18.x'
 - script: |
-    curl -fsSL https://get.pnpm.io/install.sh | sh -
+    npm install --global pnpm
   displayName: "Setup pnpm"
 
 - script: pnpm install
