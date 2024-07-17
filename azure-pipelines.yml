@@ -17,7 +17,7 @@ steps:
     version: '18.x'
 
 - script: |
-    yarn install
-    yarn build-storybook
-    npx chromatic --project-token=chpt_d1f0c3a104744ba --only-changed --exit-zero-on-changes --exit-once-uploaded
+    pnpm install
+    pnpm build-storybook
+    npx chromatic --project-token=chpt_d1f0c3a104744ba --only-changed --exit-zero-on-changes --exit-once-uploaded --storybook-build-dir='storybook-static'
   displayName: 'Run a multi-line script'
