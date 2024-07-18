@@ -18,13 +18,9 @@ jobs:
         run: pnpm install
       - name: build storybook
         run: pnpm build-storybook
-      - name: run chromatic
-        run: pnpm chromatic
-        env:
-          CHROMATIC_PROJECT_TOKEN: chpt_d1f0c3a104744ba
       - name: Run Chromatic
         id: run-chromatic-action
-        uses: chromaui/action@v11
+        uses: chromaui/action@latest
         with:
           onlyChanged: true
           traceChanged: true
