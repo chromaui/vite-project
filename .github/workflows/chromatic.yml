@@ -20,10 +20,9 @@ jobs:
         run: pnpm build-storybook
       - name: Run Chromatic
         id: run-chromatic-action
-        uses: chromaui/action@latest
+        uses: chromaui/action@v11
         with:
           onlyChanged: true
-          traceChanged: true
           zip: true
           debug: true
           exitZeroOnChanges: true
