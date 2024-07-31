@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      chromatic:
+        specifier: 11.7.0--canary.1019.10184330128.0
+        version: 11.7.0--canary.1019.10184330128.0
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -1572,6 +1575,18 @@ packages:
   chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
+
+  chromatic@11.7.0--canary.1019.10184330128.0:
+    resolution: {integrity: sha512-mGF+TChxbdO9d0/6Jp4RsdNiEWWJ24N9v1FpGI7BU1FrDMNwAHFA7oSGgHGj7jestYJAvOlZUnUch5fowDv5UA==}
+    hasBin: true
+    peerDependencies:
+      '@chromatic-com/cypress': ^0.*.* || ^1.0.0
+      '@chromatic-com/playwright': ^0.*.* || ^1.0.0
+    peerDependenciesMeta:
+      '@chromatic-com/cypress':
+        optional: true
+      '@chromatic-com/playwright':
+        optional: true
 
   chrome-trace-event@1.0.4:
     resolution: {integrity: sha512-rNjApaLzuwaOTjCiT8lSDdGN1APCiqkChLMJxJPWLunPAt5fy8xgU9/jNOchV84wfIxrA0lRQB7oCT8jrn/wrQ==}
@@ -4963,6 +4978,8 @@ snapshots:
       fsevents: 2.3.3
 
   chownr@2.0.0: {}
+
+  chromatic@11.7.0--canary.1019.10184330128.0: {}
 
   chrome-trace-event@1.0.4: {}
 

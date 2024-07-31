@@ -9,11 +9,12 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build --stats-json -o storybook-static",
-    "chromatic": "npx chromatic --project-token=chpt_d1f0c3a104744ba --only-changed --debug --trace-changed 'expanded' --exit-zero-on-changes --exit-once-uploaded --auto-accept-changes 'main' --storybook-build-dir 'storybook-static'"
+    "chromatic": "chromatic --project-token=chpt_d1f0c3a104744ba --only-changed --debug --trace-changed 'expanded' --exit-zero-on-changes --exit-once-uploaded --auto-accept-changes 'main' --storybook-build-dir 'storybook-static'"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "chromatic": "11.7.0--canary.1019.10184330128.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",
