@@ -1,8 +1,8 @@
 export const allModes = {
   light: { theme: 'light' },
   dark: { theme: 'dark' },
-  xs: { viewport: 'breakpointXS' },
-  s: { viewport: 'breakpointS' },
-  m: { viewport: 'breakpointM' },
-  l: { viewport: 'breakpointL' },
+  xs: { viewport: 'small mobile' },
+  s: { viewport: 'large mobile' },
+  m: { viewport: 'tablet' },
+  l: { viewport: 'desktop' },
 } as const;
