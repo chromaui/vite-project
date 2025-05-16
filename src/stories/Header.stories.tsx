@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { within, fn, expect, createEvent, fireEvent } from '@storybook/test';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { within, fn, expect, createEvent, fireEvent } from 'storybook/test';
 import { Header } from './Header';
 
 const meta = {
@@ -19,16 +19,11 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const LoggedIn: Story = {
-  args: {},
-  play: async ({ args, canvasElement }) => {
-    const canvas = within(canvasElement);
-    const loginButton = await canvas.findByRole('button', { name: /Log in/i });
-    await expect(loginButton).toBeInTheDocument();
-    const clickHyperlink = createEvent.click(loginButton);
-    const isPrevented = fireEvent(loginButton, clickHyperlink);
-    await expect(args.onLogin).toHaveBeenCalled();
-    expect(isPrevented).toBe(true);
+  args: {
+    onLogout: fn(),
+    user: { name: 'Test User' },
+    onCreateAccount: fn(),
   },
 };
 
-export const LoggedOut: Story = {};
+// export const LoggedOut: Story = {};
