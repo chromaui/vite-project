@@ -1,4 +1,5 @@
 import React from 'react';
+import { allModes } from './modes';
 
 const parameters = {
   controls: {
@@ -7,8 +8,18 @@ const parameters = {
       date: /Date$/,
     },
   },
+  globals: {
+    viewport: {
+      default: 'small mobile',
+    },
+  },
+  chromatic: {
+    modes: {
+      mobile: allModes.s,
+    },
+  },
 
-  tags: ['autodocs']
+  tags: ['autodocs'],
 };
 
 export default parameters;

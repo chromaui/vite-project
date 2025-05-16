@@ -3,9 +3,7 @@ import type { StorybookConfig } from '@storybook/react-vite';
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
 
-  addons: [
-    '@storybook/addon-essentials',
-  ],
+  addons: ['@storybook/addon-a11y', '@storybook/addon-docs'],
 
   framework: {
     name: '@storybook/react-vite',
@@ -15,8 +13,8 @@ const config: StorybookConfig = {
   docs: {},
 
   typescript: {
-    reactDocgen: 'react-docgen-typescript'
-  }
+    reactDocgen: 'react-docgen-typescript',
+  },
 };
 
 export default config;
