@@ -35,13 +35,11 @@ export const LoggedIn: Story = {
 };
 
 // // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
-// LoggedIn.play = async ({ canvasElement }) => {
-//   const canvas = within(canvasElement);
-//   const loginButton = await canvas.getByRole('button', { name: /Log out/i });
-//   const clickHyperlink = createEvent.click(loginButton);
-//   fireEvent(loginButton, clickHyperlink);
-//   // await userEvent.click(clickHyperlink);
-// };
+LoggedIn.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const loginButton = await canvas.getByRole('button', { name: /Log out/i });
+  // await userEvent.click(clickHyperlink);
+};
 
 export const Iphone14: Story = {
   globals: {
