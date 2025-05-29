@@ -24,7 +24,7 @@ export const LoggingIn: Story = {
   args: {
     user: { name: 'Test User' },
   },
-  play: async ({ args, canvasElement }) => {
+  play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     const loginButton = await canvas.findByRole('button', { name: /Log in/i });
     await expect(loginButton).toBeInTheDocument();
@@ -35,7 +35,7 @@ export const LoggingIn: Story = {
 };
 
 export const LoggingOut: Story = {
-  play: async ({ args, canvasElement, context }) => {
+  play: async ({ canvasElement, context }) => {
     await LoggingIn.play(context);
     const canvas = within(canvasElement);
     const logoutButton = await canvas.findByRole('button', {
