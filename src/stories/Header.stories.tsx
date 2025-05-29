@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { within, fn, expect, createEvent, fireEvent } from 'storybook/test';
+import { fn } from 'storybook/test';
 import { Header } from './Header';
 
 const meta = {
@@ -25,5 +25,3 @@ export const LoggedIn: Story = {
     onCreateAccount: fn(),
   },
 };
-
-// export const LoggedOut: Story = {};
