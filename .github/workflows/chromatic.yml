@@ -29,4 +29,4 @@ jobs:
           exitOnceUploaded: true
           autoAcceptChanges: 'main'
         env:
-          CHROMATIC_PROJECT_TOKEN: chpt_d1f0c3a104744ba
+          CHROMATIC_PROJECT_TOKEN: chpt_74520693a0a8411

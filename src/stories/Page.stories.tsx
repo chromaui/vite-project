@@ -24,21 +24,14 @@ export const LoggedIn: Story = {
   args: {
     user: { name: 'Test User' },
   },
-  // play: async ({ args, canvasElement }) => {
-  //   const canvas = within(canvasElement);
-  //   const loginButton = await canvas.findByRole('button', { name: /Log in/i });
-  //   await expect(loginButton).toBeInTheDocument();
+  play: async ({ args, canvasElement }) => {
+    const canvas = within(canvasElement);
+    const loginButton = await canvas.findByRole('button', { name: /Log in/i });
+    await expect(loginButton).toBeInTheDocument();
 
-  //   // const mockEvent = { preventDefault: fn() };
-  //   userEvent.click(loginButton);
-  //   await expect(args.onLogin).toHaveBeenCalled();
-  //   // expect(mockEvent.preventDefault).toBeCalled();
-  //   // const clickHyperlink = createEvent.click(loginButton);
-  //   // const isPrevented = fireEvent(loginButton, clickHyperlink);
-  //   // expect(clickHyperlink.defaultPrevented).toBe(true);
-  //   // expect(isPrevented).toBe(false);
-  //   // await userEvent.click(clickHyperlink);
-  // },
+    // const mockEvent = { preventDefault: fn() };
+    userEvent.click(loginButton);
+  },
 };
 
 // // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
@@ -49,3 +42,9 @@ export const LoggedIn: Story = {
 //   fireEvent(loginButton, clickHyperlink);
 //   // await userEvent.click(clickHyperlink);
 // };
+
+export const Iphone14: Story = {
+  globals: {
+    viewport: { value: 'iphone14', isRotated: true },
+  },
+};

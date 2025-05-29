@@ -1,25 +1,28 @@
-import React from 'react';
+import { Preview } from '@storybook/react-vite';
+import { INITIAL_VIEWPORTS } from 'storybook/viewport';
 import { allModes } from './modes';
 
-const parameters = {
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
+const preview: Preview = {
+  parameters: {
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/,
+      },
     },
-  },
-  globals: {
     viewport: {
-      default: 'small mobile',
+      options: INITIAL_VIEWPORTS,
     },
-  },
-  chromatic: {
-    modes: {
-      mobile: allModes.s,
+    chromatic: {
+      modes: {
+        mobile: allModes.mobile,
+      },
     },
+    tags: ['autodocs'],
   },
-
-  tags: ['autodocs'],
+  initialGlobals: {
+    viewport: { value: 'iphone14', isRotated: false },
+  },
 };
 
-export default parameters;
+export default preview;

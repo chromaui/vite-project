@@ -1,8 +1,5 @@
+import { INITIAL_VIEWPORTS } from 'storybook/viewport';
+
 export const allModes = {
-  light: { theme: 'light' },
-  dark: { theme: 'dark' },
-  xs: { viewport: 'small mobile' },
-  s: { viewport: 'large mobile' },
-  m: { viewport: 'tablet' },
-  l: { viewport: 'desktop' },
+  mobile: INITIAL_VIEWPORTS.iphone14,
 } as const;
