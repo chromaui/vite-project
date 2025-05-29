@@ -20,7 +20,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 // export const LoggedOut: Story = {};
 
-export const LoggedIn: Story = {
+export const LoggingIn: Story = {
   args: {
     user: { name: 'Test User' },
   },
@@ -34,11 +34,15 @@ export const LoggedIn: Story = {
   },
 };
 
-// // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
-LoggedIn.play = async ({ canvasElement }) => {
-  const canvas = within(canvasElement);
-  const loginButton = await canvas.getByRole('button', { name: /Log out/i });
-  // await userEvent.click(clickHyperlink);
+export const LoggingOut: Story = {
+  play: async ({ args, canvasElement, context }) => {
+    await LoggingIn.play(context);
+    const canvas = within(canvasElement);
+    const logoutButton = await canvas.findByRole('button', {
+      name: /Log Out/i,
+    });
+    await expect(logoutButton).toBeInTheDocument();
+  },
 };
 
 export const Iphone14: Story = {

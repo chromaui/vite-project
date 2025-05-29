@@ -10,15 +10,25 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
+
     viewport: {
       options: INITIAL_VIEWPORTS,
     },
+
     chromatic: {
       modes: {
         mobile: allModes.mobile,
       },
     },
+
     tags: ['autodocs'],
+
+    a11y: {
+      // 'todo' - show a11y violations in the test UI only
+      // 'error' - fail CI on a11y violations
+      // 'off' - skip a11y checks entirely
+      test: 'todo'
+    }
   },
   initialGlobals: {
     viewport: { value: 'iphone14', isRotated: false },
