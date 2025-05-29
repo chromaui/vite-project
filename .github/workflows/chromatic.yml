@@ -20,7 +20,7 @@ jobs:
         run: pnpm build-storybook
       - name: Run Chromatic
         id: run-chromatic-action
-        uses: chromaui/action@v11
+        uses: chromaui/action@latest
         with:
           onlyChanged: true
           zip: true
