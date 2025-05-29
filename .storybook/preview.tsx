@@ -24,11 +24,12 @@ const preview: Preview = {
     tags: ['autodocs'],
 
     a11y: {
+      // I didn't know this was a thing!
       // 'todo' - show a11y violations in the test UI only
       // 'error' - fail CI on a11y violations
       // 'off' - skip a11y checks entirely
-      test: 'todo'
-    }
+      test: 'todo',
+    },
   },
   initialGlobals: {
     viewport: { value: 'iphone14', isRotated: false },
