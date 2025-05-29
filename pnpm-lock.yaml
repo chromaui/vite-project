@@ -52,8 +52,8 @@ importers:
         specifier: ^8.2.5
         version: 8.3.0(@babel/core@7.25.2)(webpack@5.94.0(@swc/core@1.7.22)(esbuild@0.24.0))
       chromatic:
-        specifier: 11.20.3--canary.1133.12588019169.0
-        version: 11.20.3--canary.1133.12588019169.0(@chromatic-com/playwright@0.6.18(@playwright/test@1.46.1)(@swc/core@1.7.22)(@types/react@18.3.5)(esbuild@0.24.0)(prettier@3.3.3)(typescript@5.7.2))
+        specifier: 12.0.0
+        version: 12.0.0(@chromatic-com/playwright@0.6.18(@playwright/test@1.46.1)(@swc/core@1.7.22)(@types/react@18.3.5)(esbuild@0.24.0)(prettier@3.3.3)(typescript@5.7.2))
       storybook:
         specifier: ^9.0.0
         version: 9.0.0(@testing-library/dom@10.4.0)(prettier@3.3.3)
@@ -1394,18 +1394,6 @@ packages:
   chokidar@3.6.0:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
-
-  chromatic@11.20.3--canary.1133.12588019169.0:
-    resolution: {integrity: sha512-Q7rnLWKIV37cG6if6pVWt4rG93T8SilGggOZonNH4RZWBZJmX+rUZnoM6mQOlqxo4tdMC9nM73ZfxgfZJ2ZuJA==}
-    hasBin: true
-    peerDependencies:
-      '@chromatic-com/cypress': ^0.*.* || ^1.0.0
-      '@chromatic-com/playwright': ^0.*.* || ^1.0.0
-    peerDependenciesMeta:
-      '@chromatic-com/cypress':
-        optional: true
-      '@chromatic-com/playwright':
-        optional: true
 
   chromatic@12.0.0:
     resolution: {integrity: sha512-X7v26BLfAzHCU92nxPsCuvt+MazmA7S6cN7pCRRhnDYChDxHES48YvXarOybLdlH9kNP/3lMyknu6iseTh0T9A==}
@@ -4374,10 +4362,6 @@ snapshots:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.3
-
-  chromatic@11.20.3--canary.1133.12588019169.0(@chromatic-com/playwright@0.6.18(@playwright/test@1.46.1)(@swc/core@1.7.22)(@types/react@18.3.5)(esbuild@0.24.0)(prettier@3.3.3)(typescript@5.7.2)):
-    optionalDependencies:
-      '@chromatic-com/playwright': 0.6.18(@playwright/test@1.46.1)(@swc/core@1.7.22)(@types/react@18.3.5)(esbuild@0.24.0)(prettier@3.3.3)(typescript@5.7.2)
 
   chromatic@12.0.0(@chromatic-com/playwright@0.6.18(@playwright/test@1.46.1)(@swc/core@1.7.22)(@types/react@18.3.5)(esbuild@0.24.0)(prettier@3.3.3)(typescript@5.7.2)):
     optionalDependencies:
