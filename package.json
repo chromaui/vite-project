@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
-    "@chromatic-com/storybook": "^4.0.0",
     "@playwright/test": "^1.46.0",
     "@storybook/addon-a11y": "^9.0.0",
     "@storybook/addon-docs": "^9.0.0",
