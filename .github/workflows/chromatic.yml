@@ -29,5 +29,5 @@ jobs:
           exitOnceUploaded: true
           # autoAcceptChanges: 'main'
         env:
-          CHROMATIC_PROJECT_TOKEN: chpt_515c7a9dbeb4cd9
+          CHROMATIC_PROJECT_TOKEN: chpt_5f1c8cf40d4e14e
           CHROMATIC_INDEX_URL: https://index.staging-chromatic.com

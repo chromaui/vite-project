@@ -10,7 +10,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build --stats-json -o storybook-static",
     "test-storybook": "test-storybook",
-    "chromatic": "chromatic --project-token=chpt_2a4d32d83ee7a34 --only-changed --debug --trace-changed 'expanded' --exit-zero-on-changes --exit-once-uploaded --auto-accept-changes 'main' --storybook-build-dir 'storybook-static'"
+    "chromatic": "chromatic --project-token=chpt_5f1c8cf40d4e14e --only-changed --debug --trace-changed 'expanded' --exit-zero-on-changes --exit-once-uploaded --auto-accept-changes 'main' --storybook-build-dir 'storybook-static'"
   },
   "dependencies": {
     "playwright": "^1.46.0",
