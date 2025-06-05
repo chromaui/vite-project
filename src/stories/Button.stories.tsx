@@ -6,7 +6,6 @@ import { Button } from './Button';
 const meta: Meta<typeof Button> = {
   title: 'Example/Button',
   component: Button,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },
   },
