@@ -26,8 +26,6 @@ export const LoggingIn: Story = {
     const canvas = within(canvasElement);
     const loginButton = await canvas.findByRole('button', { name: /Log in/i });
     await expect(loginButton).toBeInTheDocument();
-
-    // const mockEvent = { preventDefault: fn() };
     userEvent.click(loginButton);
   },
 };
