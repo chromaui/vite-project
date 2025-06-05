@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { fn } from 'storybook/test';
+import { fn, within, waitFor, expect } from 'storybook/test';
 import { Header } from './Header';
 
 const meta = {
@@ -22,5 +22,27 @@ export const LoggedIn: Story = {
     onLogout: fn(),
     user: { name: 'Test User' },
     onCreateAccount: fn(),
+  },
+};
+
+export const LoggedOut: Story = {
+  args: {
+    onLogout: fn(),
+    onCreateAccount: fn(),
+    user: null,
+  },
+
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement.ownerDocument.body);
+    await waitFor(() =>
+      expect(
+        canvas.queryByRole('button', { name: 'Log in' })
+      ).toBeInTheDocument()
+    );
+    await waitFor(() =>
+      expect(
+        canvas.queryByRole('button', { name: 'Sign up' })
+      ).toBeInTheDocument()
+    );
   },
 };
